@@ -2,6 +2,7 @@ package com.cp.grosssalarycalculater;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -64,5 +65,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void HowItWorks (View view){
+        Intent intent = new Intent(this,HowItWorks.class);
+        startActivity(intent);
     }
 }
